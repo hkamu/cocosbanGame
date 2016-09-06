@@ -157,14 +157,10 @@ switch(level[playerPosition.y+deltaY][playerPosition.x+deltaX]){
             level[playerPosition.y][playerPosition.x]+=1;
             playerSprite.setPosition(165+25*playerPosition.x,185-25*playerPosition.y);
             level[playerPosition.y+deltaY][playerPosition.x+deltaX]+=3;
-            if (playerPosition.y+deltaY,playerPosition.x+deltaX){
+
+            if (level[playerPosition.y+deltaY][playerPosition.x+deltaX]==5){
 
               crateDown++;
-            }
-
-            if(crateDown == 2){
-
-
             }
             var movingCrate = cratesArray[playerPosition.y][playerPosition.x];
             movingCrate.setPosition(movingCrate.getPosition().x+25*deltaX,movingCrate.
@@ -174,4 +170,27 @@ switch(level[playerPosition.y+deltaY][playerPosition.x+deltaX]){
         }
         break;
     }
+
+    if(crateDown == 3){
+      restartGame();
+      //1秒待ってシーン遷移
+      setTimeout(function(){
+      cc.director.runScene(new GameOverScene());
+    },1000);
+    }
+}
+function restartGame() {
+  console.log("戻れ");
+  cc.director.runScene(new gameScene());
+
+  var level = [
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 0, 0, 0, 1],
+    [1, 1, 3, 0, 2, 0, 1],
+    [1, 0, 0, 4, 0, 0, 1],
+    [1, 0, 3, 1, 2, 0, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1]
+  ];
+
 }
