@@ -54,6 +54,45 @@
                 <key>sourceSize</key>
                 <string>{35,35}</string>
             </dict>
+            <key>wall.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{39,82},{5,5}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{5,5}}</string>
+                <key>sourceSize</key>
+                <string>{5,5}</string>
+            </dict>
+            <key>field.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{39,89},{5,5}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{5,5}}</string>
+                <key>sourceSize</key>
+                <string>{5,5}</string>
+            </dict>
+            <key>hole.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{39,96},{5,5}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{5,5}}</string>
+                <key>sourceSize</key>
+                <string>{5,5}</string>
+            </dict>
             <key>player.png</key>
             <dict>
                 <key>frame</key>
