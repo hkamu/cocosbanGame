@@ -44,7 +44,6 @@ var gameScene = cc.Scene.extend({
     audioEngine = cc.audioEngine;
     //bgm再生
     if (!audioEngine.isMusicPlaying()) {
-      //audioEngine.playMusic("res/bgm_main.mp3", true);
       audioEngine.playMusic(res.bgm_main, true);
     }
   }
