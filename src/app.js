@@ -31,6 +31,7 @@ var crateFallCount = 0; //木箱が穴に落ちた場合のカウント数を保
 var startTouch;
 var endTouch;
 var swipeTolerance = 10;//スワイプかを判断する閾値
+var audioEngine;
 
 var gameScene = cc.Scene.extend({
   onEnter: function() {
@@ -43,9 +44,7 @@ var gameScene = cc.Scene.extend({
     //音楽再生エンジン
     audioEngine = cc.audioEngine;
     //bgm再生
-    if (!audioEngine.isMusicPlaying()) {
       audioEngine.playMusic(res.bgm_main, true);
-    }
   }
 });
 
